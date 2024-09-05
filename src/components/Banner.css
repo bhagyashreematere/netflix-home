@@ -1,0 +1,36 @@
+.banner{
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b');
+    background-size: cover;
+    background-color: aliceblue;
+    color: white;
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.banner-content{
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left:30px ;
+    margin-top: 20px;
+}
+
+.banner-buttons{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: aqua;
+}
+
+.banner-buttons button:hover{
+    background-color: blue;
+    color: white;
+    transition: all 0.3s;
+}

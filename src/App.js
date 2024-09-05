@@ -1,23 +1,25 @@
 import logo from './logo.svg';
+import React from 'react';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Row from './components/Row';
 import './App.css';
 
 function App() {
+
+
+
+const movies = [
+{name: "movie1", image: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"},
+{name: "movie2", image: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"},
+{name: "movie3", image: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"},
+];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Banner />
+      <Row title="Netflix Originals" movies={movies}/>
     </div>
   );
 }
